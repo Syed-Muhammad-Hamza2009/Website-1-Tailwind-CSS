@@ -1,3 +1,4 @@
+
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -19,7 +20,7 @@ const Header = () => {
 
     return(
         <header className="bg-blue-500 text-white py-5 flex justify-between items-center px-10 relative zz-10">
-            <h1 className="text-2xl font-bold">WATCH HUB</h1>
+            <h1 className="text-2xl font-bold">WatchHUB</h1>
 
 
                 {/* Desktop Navbar */}
@@ -35,7 +36,7 @@ const Header = () => {
                 {/* mobile number menu */}
 
                 <div className="md:hidden flex items-center">
-                    <HiMenuAlt3 
+                    <HiMenuAlt3
                        className="text-white text-3xl cursor-pointer"
                        onClick={toggleMenu}
                     />
@@ -59,7 +60,7 @@ const Header = () => {
                         <nav className="flex flex-row items-center gap-3 text-white font-bold">
                                 <Link href="/" onClick={closeMenu}>Home</Link>
                                 <Link href="/about" onClick={closeMenu}>About</Link>
-                                <Link href="/watches" onClick={closeMenu}>Watches</Link>
+                                <Link href="/bikes" onClick={closeMenu}>Bikes</Link>
                                 <Link href="/contact" onClick={closeMenu}>Contact</Link>
                                 <FaShoppingCart className="text-white text-xl" />
                          </nav>      
